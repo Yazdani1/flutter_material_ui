@@ -68,11 +68,62 @@ class _HomeState extends State<Home> {
 
           new Container(
             height: 100.0,
-            margin: EdgeInsets.all(10.0),
+            margin: EdgeInsets.all(5.0),
             child: new Card(
               elevation: 10.0,
+              shape: BeveledRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0)
+              ),
+              child: new Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  
+                  new Container(
+                    child: new Column(
+                      children: <Widget>[
+                        new Icon(Icons.search,color: Colors.brown,size: 50.0,),
+                        new SizedBox(height: 5.0,),
+                        new Text("50k+")
+                      ],
+                    ),
+                  ),
+                  new Container(
+                    child: new Column(
+                      children: <Widget>[
+                        new Icon(Icons.favorite_border,color: Colors.brown,size: 50.0,),
+                        new SizedBox(height: 5.0,),
+                        new Text("50k+")
+                      ],
+                    ),
+                  ),
+
+                  new Container(
+                    child: new Column(
+                      children: <Widget>[
+                        new Icon(Icons.add,color: Colors.brown,size: 50.0,),
+                        new SizedBox(height: 5.0,),
+                        new Text("50k+")
+                      ],
+                    ),
+                  ),
+
+
+                  
+                ],
+              ),
+            ),
+          ),//end container
+          new SizedBox(height: 10.0,),
+          
+          new Container(
+            margin: EdgeInsets.all(5.0),
+            child: new Column(
+              children: <Widget>[
+
+              ],
             ),
           )
+          
 
         ],
       ),
@@ -80,5 +131,10 @@ class _HomeState extends State<Home> {
 
     );
   }
+
+  Widget allData(String icon,String title,String name){
+
+  }
+
 }
 
