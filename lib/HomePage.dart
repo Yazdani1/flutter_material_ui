@@ -164,9 +164,7 @@ class _HomeState extends State<Home> {
                     allData("Upwork", "20k+"),
                   ],
                 ),
-
-
-
+                
               ],
             ),
           )
