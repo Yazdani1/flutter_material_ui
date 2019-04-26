@@ -120,6 +120,24 @@ class _HomeState extends State<Home> {
             child: new Column(
               children: <Widget>[
 
+                new Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    allData("Product", "50k+"),
+                    allData("Product", "50k+"),
+                  ],
+                ),
+                new Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    allData("Product", "50k+"),
+                    allData("Product", "50k+"),
+                  ],
+                ),
+
+
+
+
               ],
             ),
           )
@@ -132,8 +150,29 @@ class _HomeState extends State<Home> {
     );
   }
 
-  Widget allData(String icon,String title,String name){
+  Widget allData(String title,String name){
+    return Card(
+      elevation: 7.0,
+      shape: BeveledRectangleBorder(
+        borderRadius: new BorderRadius.circular(10.0)
+      ),
+      child: new Container(
+        height: 150.0,
+        width: 150.0,
+        child: new Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            new Icon(Icons.search,color: Colors.brown,size: 70.0,),
+            new Text(title,style: TextStyle(
+              fontSize: 20.0
+            ),),
 
+            new Text(name,style: TextStyle(color: Colors.brown),)
+
+          ],
+        ),
+      ),
+    );
   }
 
 }
