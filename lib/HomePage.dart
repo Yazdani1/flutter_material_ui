@@ -124,14 +124,29 @@ class _HomeState extends State<Home> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
                     allData("Product", "50k+"),
-                    allData("Product", "50k+"),
+                    allData("Food", "50k+"),
                   ],
                 ),
                 new Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-                    allData("Product", "50k+"),
-                    allData("Product", "50k+"),
+                    allData("Apple", "60k+"),
+                    allData("Flutter", "80k+"),
+                  ],
+                ),
+                new Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    allData("Fiveer", "60k+"),
+                    allData("Ar kit", "80k+"),
+                  ],
+                ),
+
+                new Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    allData("ios", "10k+"),
+                    allData("Upwork", "20k+"),
                   ],
                 ),
 
@@ -166,8 +181,8 @@ class _HomeState extends State<Home> {
             new Text(title,style: TextStyle(
               fontSize: 20.0
             ),),
-
-            new Text(name,style: TextStyle(color: Colors.brown),)
+            new SizedBox(height: 7.0,),
+            new Text(name,style: TextStyle(color: Colors.black),)
 
           ],
         ),
