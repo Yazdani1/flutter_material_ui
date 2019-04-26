@@ -149,6 +149,13 @@ class _HomeState extends State<Home> {
                     allData("Upwork", "20k+"),
                   ],
                 ),
+                new Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    allData("ios", "10k+"),
+                    allData("Upwork", "20k+"),
+                  ],
+                ),
 
 
 
