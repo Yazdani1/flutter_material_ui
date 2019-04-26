@@ -156,7 +156,6 @@ class _HomeState extends State<Home> {
                     allData("Upwork", "20k+"),
                   ],
                 ),
-
                 new Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
@@ -164,7 +163,7 @@ class _HomeState extends State<Home> {
                     allData("Upwork", "20k+"),
                   ],
                 ),
-                
+
               ],
             ),
           )
@@ -176,7 +175,6 @@ class _HomeState extends State<Home> {
 
     );
   }
-
   Widget allData(String title,String name){
     return Card(
       elevation: 7.0,
